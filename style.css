@@ -1,0 +1,78 @@
+body{
+    background-image: url(img/bg.jpg);
+    min-height: 96vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+     align-content: center;
+    align-items: center;
+    }
+    .heading{
+        position: absolute;
+        left: 50px;
+        top: 10px;
+        font-family: 'Water Brush',Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        font: bold 30px Poppins,sans-serif;
+       
+        
+    }
+    #board{
+        width: 90vmin;
+        height: 92vmin;
+     
+        display: grid;
+        background:linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+        border: 2px solid black;
+        grid-template-rows: repeat(18, 1fr);
+        grid-template-columns: repeat(18, 1fr);
+    }
+    .head{
+        background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+        border: 2px solid rgb(34, 4, 34); 
+        transform: scale(1.02);
+        border-radius: 9px;
+    }
+    
+    .snake{
+        background-color: purple;
+        border: .25vmin solid white;
+        border-radius: 12px;
+    }
+    
+    .food{
+        background: linear-gradient(red, purple);
+        border: .25vmin solid black;
+        border-radius: 8px;
+    }
+    #scoreBox{
+        position: absolute;
+        left: 5%;
+        top: 25%;
+        font-family: 'Water Brush',Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 23px;
+    }
+    #hiscoreBox{
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        font-family: 'Water Brush',Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 23px;
+    }
+    #button{
+            background-color: #c2a92e;
+            /*Green*/color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            border-radius:150px ;
+            -webkit-border-radius:150px ;
+            -moz-border-radius:150px ;
+            -ms-border-radius:150px ;
+            -o-border-radius:150px ;
+            position: absolute;
+            left: 5%;
+            top: 230px;
+}
